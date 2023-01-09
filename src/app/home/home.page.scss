@@ -1,0 +1,90 @@
+
+
+.main-content{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.header-bar{
+  position: absolute;
+}
+
+
+.middle-container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.clock-container{
+  width: 100%;
+  text-align: center;
+  color: 	#eadbcb;
+}
+
+.title-container{
+  margin-bottom: 2%;
+  text-align: center;
+  .title{
+    font-size: 2rem;
+    opacity: 0.5;
+  }
+}
+.hour-container{
+  display: flex;
+  max-height: 210px;
+  height: 180px;
+  align-items:center;
+  justify-content:center;
+}
+.options-container{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+//////TEXTS///////
+/// 
+/// 
+/// 
+/// 
+///           
+.clock-text{
+  font-size: 10rem;
+  margin: 0;
+}
+.rest-text{
+  font-size: 2.5vw;
+  margin: 0;
+}
+
+.default-button{
+  --background: black;
+  --background-hover: white;
+  --background-activated: #88f4be;
+  --background-focused: #88f4be;
+
+  --color: white;
+
+  --border-radius: 5px;
+  --border-color: #000;
+  --border-style: solid;
+  --border-width: 1px;
+
+  --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+
+  --ripple-color: deeppink;
+
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.warning{
+  color: red;
+}
+.success{
+  color: green;
+}

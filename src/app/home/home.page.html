@@ -1,0 +1,33 @@
+<div class="main-content">
+  <div class="header-bar">
+    <ion-button class="default-button" (click)="openConfig()">
+      <ion-icon slot="start" name="build-outline"></ion-icon>
+      CONFIG
+    </ion-button>
+  </div>
+  <div class="middle-container">
+    <div class="clock-container">
+      <div class="title-container">
+        <h1 class="title">{{actualInterval.title}}</h1>
+      </div>
+      <div class="hour-container">
+        <p  [@tickingClock]="ticking ? 'tickIn' : 'tickOut'" class="clock-text">{{time}}</p>   
+      </div>
+      <div class="options-container">
+        <div class="buttons-wrapper">
+            <ion-button *ngIf="!activeInterval"class="default-button" (click)="startInterval()">
+              <ion-icon slot="start"name="play-outline"></ion-icon>
+              START
+            </ion-button>
+            <ion-button *ngIf="activeInterval" class="default-button" (click)="stopInterval()">
+              <ion-icon slot="start" name="pause-outline"></ion-icon>
+              PAUSE
+            </ion-button>
+        </div>
+      </div>
+
+    </div>
+  
+  </div>
+
+</div>

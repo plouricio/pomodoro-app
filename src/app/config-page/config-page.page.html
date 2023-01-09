@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Configuraciones</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        CLOSE
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="configForm">
+    <ion-grid  [fixed]="true">     
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Pomodoro time</ion-label>
+            <ion-input type="number" placeholder="pomodoro" formControlName="pomodoroTimer" ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Short break time</ion-label>
+            <ion-input  type="number" placeholder="short break" formControlName="shortBreakTimer" ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Long break time</ion-label>
+            <ion-input  type="number" placeholder="long break"formControlName="longBreakTimer" ></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col >
+          <ion-button class="default-button" (click)="save()">
+            <ion-icon slot=start name="save-sharp"></ion-icon>
+            SAVE
+          </ion-button>
+        </ion-col>
+    
+      </ion-row>
+    </ion-grid>
+
+  </form>
+ 
+
+
+
+
+</ion-content>
